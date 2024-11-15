@@ -18,7 +18,7 @@ def initiate_db():
     connection.close()
 
 def get_all_products():
-    connection = sqlite3.connect("botdb.db")
+    connection = sqlite3.connect("botdb_for_module_14_4.db")
     cursor = connection.cursor()
     cursor.execute("SELECT * FROM Products")
     total = cursor.fetchall()
